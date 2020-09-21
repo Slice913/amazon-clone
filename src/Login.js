@@ -42,7 +42,8 @@ function Login() {
          <Link to='/'>
             <img 
             className="login__logo" 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Amazon.com-Logo.svg/1600px-Amazon.com-Logo.svg.png"
+            src="https://cdn.freebiesupply.com/images/large/2x/amazon-logo-white.png"
+           // src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Amazon.com-Logo.svg/1600px-Amazon.com-Logo.svg.png"
             />
          </Link>
          <div className="login__container">

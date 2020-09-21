@@ -38,8 +38,8 @@ function Payment() {
         getClientSecret();
     }, [basket])
 
-    console.log('THE SECRET IS >>>', clientSecret)
-    console.log('🙇', user)
+   // console.log('THE SECRET IS >>>', clientSecret)
+   // console.log('🙇', user)
 
 
     const handleSubmit = async (event) => {
@@ -54,6 +54,9 @@ function Payment() {
         }).then(({ paymentIntent }) => {
             // paymentIntent = payment confirmation
            
+           // console.log('THIS IS THE PAYMENT >>>', paymentIntent);
+           // console.log('THIS IS THE BASKET >>>', basket);
+
            db
             .collection('users')
             .doc(user?.uid) 

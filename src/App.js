@@ -23,19 +23,19 @@ function App() {
     // will only run once when the app componet loads...
 
     auth.onAuthStateChanged(authUser => {
-      console.log('THE USER IS >>>', authUser)
+      console.log('THE USER IS >>>', authUser);
 
       if (authUser) {
-        // the user just loggoed in /the user was logged in
+        // the user just logged in / the user was logged in
         dispatch({
           type:'SET_USER',
-          user: authUser
+          user: authUser,
         })
       } else {
         // the user is logged out
         dispatch({
           type: 'SET_USER',
-          user: null
+          user: null,
         })
       }
     })
